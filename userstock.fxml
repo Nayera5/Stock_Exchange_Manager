@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
+   <children>
+      <BorderPane layoutX="200.0" layoutY="120.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="311.0" prefWidth="146.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="1.0" layoutY="-2.0" prefHeight="340.0" prefWidth="147.0" style="-fx-background-color: #074173;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-2.0">
+                     <children>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: #074173;" text="Dashboard" textFill="WHITE" />
+                        <MenuButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="113.0" style="-fx-background-color: #074173;" text="User Management" textAlignment="RIGHT" textFill="WHITE">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                           </items>
+                        </MenuButton>
+                        <MenuButton alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="113.0" style="-fx-background-color: #1679AB;" text="Security" textAlignment="RIGHT" textFill="WHITE">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Stocks" />
+                            <MenuItem mnemonicParsing="false" text="Bonds" />
+                              <MenuItem mnemonicParsing="false" text="Options" />
+                          </items>
+                        </MenuButton>
+                        <MenuButton alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="113.0" style="-fx-background-color: #074173;" text="Orders" textAlignment="RIGHT" textFill="WHITE">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Stocks" />
+                              <MenuItem mnemonicParsing="false" text="deposit/withdraw" />
+                           </items>
+                        </MenuButton>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="157.0" style="-fx-background-color: #074173;" text="Price History" textFill="WHITE" />
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: #074173;" text="Transaction Hisrtory" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane prefHeight="62.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="156.0" layoutY="-86.0" prefHeight="41.0" prefWidth="585.0" style="-fx-background-color: #1679AB;" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label prefHeight="62.0" prefWidth="147.0" style="-fx-background-color: #074173;" text="LATER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Italic" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="92.0" layoutY="14.0" mnemonicParsing="false" onAction="#populateTable" prefHeight="62.0" prefWidth="135.0" style="-fx-background-color: #1679AB;" text="Companies" />
+                  <Button layoutX="402.0" layoutY="17.0" mnemonicParsing="false" onAction="#userTable" prefHeight="54.0" prefWidth="132.0" style="-fx-background-color: #1679AB;" text="Users" />
+                  <TableView fx:id="company" editable="true" layoutX="23.0" layoutY="82.0" prefHeight="415.0" prefWidth="602.0" style="-fx-background-color: #CDE8E5;" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="82.0">
+                    <columns>
+                      <TableColumn fx:id="namecol" prefWidth="75.0" text="Name" />
+                      <TableColumn fx:id="symbolcol" prefWidth="75.0" text="Email" />
+                        <TableColumn fx:id="pricecol" prefWidth="75.0" text="Account Balance" />
+                        <TableColumn fx:id="quantitycol" minWidth="-1.0" prefWidth="75.0" text="Gender" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
