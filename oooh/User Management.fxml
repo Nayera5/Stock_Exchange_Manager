@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.Icon?>-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oooh.AdminController">
+   <children>
+      <BorderPane layoutX="200.0" layoutY="120.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="311.0" prefWidth="146.0" BorderPane.alignment="CENTER" />
+         </left>
+         <top>
+            <AnchorPane prefHeight="62.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="156.0" layoutY="-86.0" prefHeight="62.0" prefWidth="652.0" style="-fx-background-color: #1679AB;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button layoutX="669.0" layoutY="15.0" mnemonicParsing="false" onAction="#goHome" prefHeight="33.0" prefWidth="55.0" style="-fx-background-color: #074173;" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="12.0" />
+                           </font></Button>
+                     </children></AnchorPane>
+                  <Label prefHeight="62.0" prefWidth="147.0" style="-fx-background-color: #074173;" text="LATER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Italic" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="466.0" prefWidth="673.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="61.0" layoutY="30.0" prefHeight="55.0" prefWidth="464.0">
+                     <children>
+                        <Label fx:id="nametitle" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="Name" />
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="111.0" text="Email" />
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="115.0" text="Gender" />
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="124.0" text="Balance" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="58.0" layoutY="302.0" prefHeight="55.0" prefWidth="464.0">
+                     <children>
+                        <Label fx:id="name5" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" />
+                        <Label fx:id="email5" alignment="CENTER" prefHeight="55.0" prefWidth="111.0" />
+                        <Label fx:id="gender5" alignment="CENTER" prefHeight="55.0" prefWidth="115.0" />
+                        <Label fx:id="balance5" alignment="CENTER" prefHeight="55.0" prefWidth="124.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="59.0" layoutY="247.0" prefHeight="55.0" prefWidth="464.0">
+                     <children>
+                        <Label fx:id="name4" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" />
+                        <Label fx:id="email4" alignment="CENTER" prefHeight="55.0" prefWidth="115.0" />
+                        <Label fx:id="gender4" alignment="CENTER" prefHeight="55.0" prefWidth="124.0" />
+                        <Label fx:id="balance4" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="59.0" layoutY="194.0" prefHeight="55.0" prefWidth="464.0">
+                     <children>
+                        <Label fx:id="name3" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" />
+                        <Label fx:id="email3" alignment="CENTER" prefHeight="55.0" prefWidth="111.0" />
+                        <Label fx:id="gender3" alignment="CENTER" prefHeight="55.0" prefWidth="115.0" />
+                        <Label fx:id="balance3" alignment="CENTER" prefHeight="55.0" prefWidth="124.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="61.0" layoutY="139.0" prefHeight="55.0" prefWidth="464.0">
+                     <children>
+                        <Label fx:id="name2" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" />
+                        <Label fx:id="email2" alignment="CENTER" prefHeight="55.0" prefWidth="111.0" />
+                        <Label fx:id="gender2" alignment="CENTER" prefHeight="55.0" prefWidth="115.0" />
+                        <Label fx:id="balance2" alignment="CENTER" prefHeight="55.0" prefWidth="124.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="60.0" layoutY="84.0" prefHeight="55.0" prefWidth="464.0">
+                     <children>
+                        <Label fx:id="name1" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" />
+                        <Label fx:id="email1" alignment="CENTER" prefHeight="55.0" prefWidth="111.0" />
+                        <Label fx:id="gender1" alignment="CENTER" prefHeight="55.0" prefWidth="115.0" />
+                        <Label fx:id="balance1" alignment="CENTER" prefHeight="55.0" prefWidth="124.0" />
+                     </children>
+                  </HBox>
+                  <Line endX="162.9000244140625" layoutX="353.0" layoutY="84.0" startX="-284.1000061035156" />
+                  <Line endX="162.9000244140625" layoutX="353.0" layoutY="138.0" startX="-284.1000061035156" />
+                  <Line endX="162.9000244140625" layoutX="352.0" layoutY="193.0" startX="-284.1000061035156" />
+                  <Line endX="162.9000244140625" layoutX="353.0" layoutY="248.0" startX="-284.1000061035156" />
+                  <Line endX="162.9000244140625" layoutX="351.0" layoutY="302.0" startX="-284.1000061035156" />
+                  <Button layoutX="264.0" layoutY="371.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #074173;" text="create" textFill="WHITE" />
+                  <Button layoutX="551.0" layoutY="99.0" mnemonicParsing="false" onAction="#deleteUser1" text="delete" AnchorPane.bottomAnchor="342.0" AnchorPane.topAnchor="99.0" />
+                  <Button layoutX="551.0" layoutY="154.0" mnemonicParsing="false" onAction="#deleteUser1" style="-fx-background-color: #074173;" text="delete" textFill="WHITE" AnchorPane.bottomAnchor="342.0" />
+                  <Button layoutX="551.0" layoutY="209.0" mnemonicParsing="false" onAction="#deleteUser3" style="-fx-background-color: #074173;" text="delete" textFill="WHITE" />
+                  <Button layoutX="550.0" layoutY="262.0" mnemonicParsing="false" onAction="#deleteUser4" style="-fx-background-color: #074173;" text="delete" textFill="WHITE" />
+                  <Button layoutX="551.0" layoutY="154.0" mnemonicParsing="false" onAction="#deleteUser2" style="-fx-background-color: #074173;" text="delete" textFill="WHITE" />
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+<!--      <Icon content="HELP_OUTLINE" />-->
+   </children>
+</AnchorPane>

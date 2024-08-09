@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oooh.CompanyController">
+   <children>
+      <AnchorPane layoutX="97.0" layoutY="57.0" prefHeight="294.0" prefWidth="717.0">
+         <children>
+            <Separator layoutX="78.0" layoutY="118.0" prefHeight="14.0" prefWidth="583.0" />
+            <Separator layoutX="78.0" layoutY="200.0" prefHeight="14.0" prefWidth="583.0" />
+            <Label layoutX="20.0" layoutY="77.0" text="AAPL">
+               <font>
+                  <Font name="Book Antiqua Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="161.0" text="AMZN">
+               <font>
+                  <Font name="Book Antiqua Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="236.0" text="NVDIA">
+               <font>
+                  <Font name="Book Antiqua Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="26.0" prefHeight="18.0" prefWidth="46.0" text="Symbol">
+               <font>
+                  <Font name="Cambria" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="70.0" layoutY="68.0" orientation="VERTICAL" prefHeight="206.0" prefWidth="18.0" />
+            <HBox layoutX="80.0" layoutY="60.0" prefHeight="62.0" prefWidth="583.0">
+               <children>
+                  <Label fx:id="priceSell1" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" />
+                  <Label fx:id="quantitySell1" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" />
+                  <Label fx:id="changeSell1" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="80.0" layoutY="4.0" prefHeight="62.0" prefWidth="696.0">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" text="Price" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" text="Quantity" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" text="Change" />
+               </children>
+            </HBox>
+            <HBox layoutX="80.0" layoutY="139.0" prefHeight="62.0" prefWidth="583.0">
+               <children>
+                  <Label fx:id="priceSell2" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" />
+                  <Label fx:id="quantitySell2" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" />
+                  <Label fx:id="changeSell2" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="80.0" layoutY="214.0" prefHeight="62.0" prefWidth="583.0">
+               <children>
+                  <Label fx:id="priceSell3" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" />
+                  <Label fx:id="quantitySell3" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" />
+                  <Label fx:id="changeSell3" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="120.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="50.0" prefWidth="908.0" style="-fx-background-color: #074173;">
+         <children>
+            <Button layoutX="819.0" layoutY="9.0" mnemonicParsing="false" onAction="#goHome" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: #074173;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="16.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="315.0" layoutY="11.0" prefHeight="28.0" prefWidth="155.0" text="Session Time :  " textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="timer" alignment="CENTER" layoutX="462.0" layoutY="7.0" prefHeight="18.0" prefWidth="135.0" text="00:00:00" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="addBalance" layoutX="69.0" layoutY="456.0" prefHeight="26.0" prefWidth="291.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="360.0" layoutY="429.0" mnemonicParsing="false" onAction="#sell" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: red;" text="SELL" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comboCompanySell" layoutX="502.0" layoutY="385.0" prefWidth="150.0" promptText="Company" />
+      <ComboBox fx:id="comboQuantitySell" layoutX="502.0" layoutY="456.0" prefWidth="150.0" promptText="Quantity" />
+   </children>
+</AnchorPane>
