@@ -1,0 +1,36 @@
+@startuml
+
+title Admin User Management Sequence Diagram
+
+participant Admin
+participant System
+participant UserController
+participant TimerManager
+participant User
+participant CompanyController
+
+Admin -> System: Enters admin dashboard
+System -> Admin: Displays admin dashboard
+Admin -> UserController: Request user details
+UserController -> System: Retrieve user details
+System -> Admin: Return user details
+loop For each user
+    Admin -> UserController: Delete user request
+    UserController -> System: Delete user
+    System -> UserController: Confirm deletion
+    UserController -> Admin: Notify deletion status
+end
+Admin -> TimerManager: Start/Stop stopwatch
+TimerManager -> System: Start/Stop timer
+System -> TimerManager: Notify timer status
+TimerManager -> Admin: Update timer status
+Admin -> System: Logout
+System -> Admin: Logout confirmation
+
+User -> Admin: Performs transaction
+Admin -> System: Process transaction
+System -> Admin: Transaction status
+Admin -> CompanyController: Update company details
+CompanyController -> System: Confirm update
+System -> Admin: Update confirmation
+@enduml
